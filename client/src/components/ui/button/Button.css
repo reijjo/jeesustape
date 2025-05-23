@@ -1,0 +1,30 @@
+button {
+  all: unset;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: 400;
+  text-align: center;
+}
+
+.btn-filled {
+  background-color: var(--accent-300);
+  color: var(--primary-950);
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+
+  transition: scale 0.125s ease-out;
+
+  &:hover {
+    background-color: var(--accent-400);
+  }
+
+  &:active {
+    scale: 0.925;
+  }
+}
+
+.btn-cta {
+  height: 2rem;
+  padding: 0.5rem 2.5rem;
+}
