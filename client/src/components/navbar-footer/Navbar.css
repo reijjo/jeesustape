@@ -7,10 +7,28 @@ nav {
   border-bottom: 1px solid var(--secondary);
   z-index: 10;
   backdrop-filter: blur(2rem);
+  background-color: rgba(7, 15, 24, 0.75);
 }
 
 .nav-content {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: inherit;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+
+  & li:hover {
+    color: var(--secondary);
+  }
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.925rem;
 }

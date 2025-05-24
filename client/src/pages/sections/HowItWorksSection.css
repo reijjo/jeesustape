@@ -1,0 +1,13 @@
+.how-it-works-section {
+  background-color: var(--primary-950);
+  padding: 2rem 0;
+  display: grid;
+  place-items: center;
+}
+
+.how-it-works-texts {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

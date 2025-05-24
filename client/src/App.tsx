@@ -1,6 +1,6 @@
 import { lazy, Suspense } from "react";
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 
 const Home = lazy(() => import("./pages/Home"));
 const Layout = lazy(() => import("./components/ui/layout/Layout"));
@@ -11,6 +11,7 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route element={<Home />} path="/" />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>
     </Suspense>
