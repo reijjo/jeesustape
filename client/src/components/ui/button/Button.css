@@ -27,7 +27,7 @@ button {
 .btn-filled {
   background-color: var(--secondary);
   color: var(--primary-950);
-  border: 1px solid transparent;
+  border: 1px solid var(--secondary-900);
 
   &:hover {
     background-color: var(--secondary-400);

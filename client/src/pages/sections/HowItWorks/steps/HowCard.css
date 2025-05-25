@@ -1,0 +1,71 @@
+.how-it-works-card {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgb(226, 138, 105, 0.125);
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+
+  background: radial-gradient(rgba(255, 255, 255, 0.125), var(--primary));
+
+  transition: transform 0.3s ease;
+}
+
+.how-it-works-card-number {
+  position: absolute;
+  left: 1rem;
+  border: 1px solid var(--accent);
+  background-color: var(--accent);
+  color: black;
+  border-radius: 50%;
+  height: 3rem;
+  aspect-ratio: 1/1;
+  padding: 0.5rem;
+  display: grid;
+  place-items: center;
+  z-index: 1;
+}
+
+.how-it-works-card-image {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+
+  transition: transform 0.3s ease;
+}
+
+.how-it-works-card:hover .how-it-works-card-image {
+  transform: scale(1.1);
+}
+
+.how-it-works-card-icon {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  background-color: var(--accent-light);
+  border: 2px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  transition: transform 0.3s ease;
+}
+
+.how-it-works-card:hover .how-it-works-card-icon {
+  transform: scale(1.1);
+}
+
+.how-it-works-card-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+  text-wrap: balance;
+}

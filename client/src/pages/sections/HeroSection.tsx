@@ -10,8 +10,9 @@ export const HeroSection = () => {
           Ole oman elämäsi <span>jeesusteippi</span>
         </h1>
         <h6 className="hero-subtitle">
-          Korjaa pikkuviat itse ilman turhia kuluja. Ota kuva ongelmasta ja
-          tekoäly antaa ohjeet sen korjaamiseen askel askeleelta.
+          Korjaa pikkuviat itse ilman turhia kuluja. Ota kuva ongelmasta tai
+          kuvaile se tekoälylle ja saat ohjeet sen korjaamiseen askel
+          askeleelta.
         </h6>
         <div className="hero-buttons">
           <Button children="Kokeile nyt" extraClass="btn-filled" />
