@@ -1,4 +1,5 @@
 import heroImage from "../../assets/hero.png";
+import broken from "../../assets/images/broken.png";
 import { Button } from "../../components/ui/button/Button";
 import "./HeroSection.css";
 
@@ -20,6 +21,9 @@ export const HeroSection = () => {
         </div>
       </div>
       <picture className="hero-image-container">
+        <div className="broken-overlay">
+          <img src={broken} alt="Broken" />
+        </div>
         <img className="hero-image" src={heroImage} alt="Hero" />
       </picture>
     </section>
